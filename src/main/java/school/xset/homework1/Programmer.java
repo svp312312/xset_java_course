@@ -1,4 +1,4 @@
-package homework1;
+package school.xset.homework1;
 
 public class Programmer {
     // TODO: Создать класс Programmer с полями:
