@@ -3,7 +3,7 @@ package school.xset.homework3;
 import java.util.ArrayList;
 
 //Конкретная реализация интерфейса коробки (с ArrayList внутри, не доступным снаружи)
-class SweetBoxImpl implements Sweet.SweetBox {
+class SweetBoxImpl implements SweetBox {
     private ArrayList<Sweet> sweets;  // Внутренний список сладостей
 
     public SweetBoxImpl() {

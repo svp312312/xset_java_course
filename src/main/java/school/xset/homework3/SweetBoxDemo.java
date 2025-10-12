@@ -16,7 +16,7 @@ import java.io.InputStreamReader;
 public class SweetBoxDemo {
     public static void main(String[] args) throws IOException {
 
-        Sweet.SweetBox box = new SweetBoxImpl();
+        SweetBoxImpl box = new SweetBoxImpl();
         // Добавляем сладости в коробку
         boolean giftCollected = false;
 
