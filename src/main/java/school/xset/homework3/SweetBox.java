@@ -11,5 +11,5 @@ public interface SweetBox {
 
     // 4. Методы оптимизации: удаление по весу и цене до заданного предела
     void optimizeByWeight(double maxWeight);  // Удалять минимальный вес, пока общий вес > maxWeight
-    void optimizeByPrice(double maxPrice);    // Удалять минимальную цену, пока общая цена > maxPrice
+    void optimizeByPrice(double maxPrice);    // Удалять минимальную цену, пока общий вес > maxWeight
 }
