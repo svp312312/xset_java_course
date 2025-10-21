@@ -74,9 +74,9 @@ public class Lesson6HW {
 
                 // Вывод статистики на экран
                 System.out.println("\nВывод статистики");
-                System.out.println("cлово\t\t     количество_повторений");
+                System.out.println("cлово\t / количество_повторений");
                 for (String word : uniqueWords) {
-                    System.out.printf("\n%-16s — %-10d", word,wordCount.get(word));
+                    System.out.printf("\n%-16s - %-10d", word, wordCount.get(word));
 //                    System.out.println(word + " — " + wordCount.get(word));
                 }
 
