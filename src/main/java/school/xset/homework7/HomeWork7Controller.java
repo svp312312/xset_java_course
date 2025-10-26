@@ -2,6 +2,7 @@ package school.xset.homework7;
 
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import school.xset.homework7.models.*;
 
@@ -71,8 +72,8 @@ public class HomeWork7Controller {
     // Ожидаемый json для запроса:
     //    {
     //        "numbers" : [ 10, 9, 8, 7 ],
-    //        "isAsc" : true
-    //    }
+    //     }
+    // Для Query Parameters ожидается ключ isAsc со значением true или false
     // Возвращается отсортированный массив в формате:
     // {
     //    "sortedNumbers": [
@@ -83,7 +84,7 @@ public class HomeWork7Controller {
     // }
 
     @PostMapping("/sort-array")
-    public NumbersResponse postSortArray(@RequestBody NumbersRequest numbersRequest) {
+    public NumbersResponse postSortArray(@RequestBody NumbersRequest numbersRequest, @RequestParam Boolean isAsc) {
 
             List<Integer> numbers = numbersRequest.getNumbers();
 
@@ -92,7 +93,7 @@ public class HomeWork7Controller {
 //            }
 
             List<Integer> sorted;
-            if (numbersRequest.getIsAsc()) {
+            if (isAsc) {
                 sorted = numbers.stream().sorted().collect(Collectors.toList());
             } else {
                 sorted = numbers.stream().sorted(Collections.reverseOrder()).collect(Collectors.toList());
