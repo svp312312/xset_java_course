@@ -1,0 +1,22 @@
+окт. 28, 2025 9:46:58 AM school.xset.homework8.LoggerService writeLog
+INFO: 2025-10-28T09:46:58.475576700: Result for sort-array: : NumbersResponse(sortedNumbers=[7, 8, 9, 10])
+окт. 28, 2025 9:47:16 AM school.xset.homework8.LoggerService writeLog
+INFO: 2025-10-28T09:47:16.952166600: Result for sumif:: SumifResponse(sum=3)
+окт. 28, 2025 9:47:22 AM school.xset.homework8.LoggerService writeLog
+INFO: 2025-10-28T09:47:22.328936500: Result for random-date:: RandomDateResponse(randomDate=2001-08-05)
+окт. 28, 2025 9:47:27 AM school.xset.homework8.LoggerService writeLog
+INFO: 2025-10-28T09:47:27.665151500: Result for char-counts:: CharCountsResponse(charCounts={1=3, -=2, 0=2, 9=2, 2=1})
+окт. 28, 2025 9:50:25 AM school.xset.homework8.LoggerService writeLog
+INFO: 2025-10-28T09:50:25.411012800: Result for sum:: SumResponse(sum=10)
+окт. 28, 2025 9:54:18 AM school.xset.homework8.LoggerService writeLog
+INFO: 2025-10-28T09:54:18.871535200: Result for sort-array: : NumbersResponse(sortedNumbers=[7, 8, 9, 10])
+окт. 28, 2025 9:54:23 AM school.xset.homework8.LoggerService writeLog
+INFO: 2025-10-28T09:54:23.675488500: Result for sum:: SumResponse(sum=10)
+окт. 28, 2025 9:54:28 AM school.xset.homework8.LoggerService writeLog
+INFO: 2025-10-28T09:54:28.708898900: Result for sumif:: SumifResponse(sum=3)
+окт. 28, 2025 9:54:34 AM school.xset.homework8.LoggerService writeLog
+INFO: 2025-10-28T09:54:34.002000400: Result for random-date:: RandomDateResponse(randomDate=1995-07-21)
+окт. 28, 2025 9:54:40 AM school.xset.homework8.LoggerService writeLog
+INFO: 2025-10-28T09:54:40.901913600: Result for char-counts:: CharCountsResponse(charCounts={1=3, -=2, 0=2, 9=2, 2=1})
+окт. 28, 2025 11:24:35 AM school.xset.homework8.LoggerService writeLog
+INFO: 2025-10-28T11:24:35.070973200: Result for sort-array: : NumbersResponse(sortedNumbers=[7, 8, 9, 10])
