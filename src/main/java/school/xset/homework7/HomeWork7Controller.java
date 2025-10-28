@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import school.xset.homework7.models.*;
 
+
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
@@ -26,41 +27,45 @@ public class HomeWork7Controller {
     //        "endDate" : "2002-01-10"
     //    }
     //  Ответ возвращается в формате:
-    //  Случайная дата: 1993-05-07
+    //    {
+    //        "randomDate": "1996-10-13"
+    //    }
 
-    @PostMapping("/random-date")
-        public String postRandomDate(@RequestBody String data) {
-        try {
-            // Из json формируем строку, исключая пробелы (\s) и кавычки (\")
-            String str = data.trim().replaceAll("\\s", "").replaceAll("\"","");
+    @PostMapping("/post_random-date")
+    public RandomDateResponse postRandomDate(@RequestBody String data) {
+//    public String postRandomDate(@RequestBody String data) {
+        // Из json формируем строку, исключая пробелы (\s) и кавычки (\")
+//            String str = data.trim().replaceAll("\\s", "").replaceAll("\"","");
+        String str = data.trim().replaceAll("[\"\\s]", "");
 
-            // Извлекаем позицию начала "startDate:"
-            int startIndex = str.indexOf("startDate:");
-            // Извлекаем текст даты
-            String startDate = str.substring(startIndex + 10, startIndex + 20); // "2015-01-01".length() = 10, но с учётом кавычек
+        // Извлекаем позицию начала "startDate:"
+        int startIndex = str.indexOf("startDate:");
+        // Извлекаем текст даты
+        String startDate = str.substring(startIndex + 10, startIndex + 20); // "2015-01-01".length() = 10, но с учётом кавычек
 
-            // Извлекаем позицию начала "endDate:"
-            int endIndex = str.indexOf("endDate:");
-            // Извлекаем текст даты
-            String endDate = str.substring(endIndex + 8, endIndex + 18);
+        // Извлекаем позицию начала "endDate:"
+        int endIndex = str.indexOf("endDate:");
+        // Извлекаем текст даты
+        String endDate = str.substring(endIndex + 8, endIndex + 18);
 
-            DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
-            // Парсим начальную и конечную даты
-            LocalDate localStartDate = LocalDate.parse(startDate, formatter);
-            LocalDate localEndDate = LocalDate.parse(endDate, formatter);
-            // Вычисляем количество дней между датами
-            long daysBetween = ChronoUnit.DAYS.between(localStartDate, localEndDate);
-            Random random = new Random();
-            // Генерируем случайное число дней от 0 до daysBetween - 1
-            long randomDays = random.nextLong(daysBetween);
-            // Добавляем случайное число дней к начальной дате
-            LocalDate randomDate = localStartDate.plusDays(randomDays);
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+        // Парсим начальную и конечную даты
+        LocalDate localStartDate = LocalDate.parse(startDate, formatter);
+        LocalDate localEndDate = LocalDate.parse(endDate, formatter);
+        // Вычисляем количество дней между датами
+        long daysBetween = ChronoUnit.DAYS.between(localStartDate, localEndDate);
+        Random random = new Random();
+        // Генерируем случайное число дней от 0 до daysBetween - 1
+        long randomDays = random.nextLong(daysBetween);
+        // Добавляем случайное число дней к начальной дате
+        LocalDate randomDate = localStartDate.plusDays(randomDays);
+        RandomDateResponse response =new RandomDateResponse();
+//            SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+//            String strdata = sdf.format(randomDateLocalDate);
+        response.setRandomDate(randomDate);
 
-            return "Случайная дата: " + randomDate;
-        } catch (Exception e) {
-            // Обработка ошибок, если даты некорректны
-            return "Ошибка в ключах, либо некорректные даты. Используйте формат yyyy-MM-dd.";
-        }
+        return response;
+
     }
 
 
@@ -83,24 +88,18 @@ public class HomeWork7Controller {
     //    ]
     // }
 
-    @PostMapping("/sort-array")
+    @PostMapping("/post_sort-array")
     public NumbersResponse postSortArray(@RequestBody NumbersRequest numbersRequest, @RequestParam Boolean isAsc) {
-
-            List<Integer> numbers = numbersRequest.getNumbers();
-
-//            if (numbers == null || numbers.isEmpty()) {
-//                return new NumbersResponse(List.of()); // Вернём пустой список, если ничего нет
-//            }
-
-            List<Integer> sorted;
-            if (isAsc) {
-                sorted = numbers.stream().sorted().collect(Collectors.toList());
-            } else {
-                sorted = numbers.stream().sorted(Collections.reverseOrder()).collect(Collectors.toList());
-            }
-            NumbersResponse sort = new NumbersResponse();
-            sort.setSortedNumbers(sorted);
-            return sort;
+        List<Integer> numbers = numbersRequest.getNumbers();
+        List<Integer> sorted;
+        if (isAsc) {
+            sorted = numbers.stream().sorted().collect(Collectors.toList());
+        } else {
+            sorted = numbers.stream().sorted(Collections.reverseOrder()).collect(Collectors.toList());
+        }
+        NumbersResponse sort = new NumbersResponse();
+        sort.setSortedNumbers(sorted);
+        return sort;
     }
 
     // TODO: Вернуть частоту символов в переданной строке (отсортировано по убыванию)
@@ -121,7 +120,7 @@ public class HomeWork7Controller {
     //          }
     //    }
 
-    @PostMapping("/char-counts")
+    @PostMapping("/post_char-counts")
 
     public CharCountsResponse postCharCounts(@RequestBody CharCountsRequest text) {
 
@@ -168,16 +167,16 @@ public class HomeWork7Controller {
     //        "sum": 10
     //    }
 
-    @PostMapping("/sum")
+    @PostMapping("/post_sum")
     public SumResponse postSum(@RequestBody SumRequest numbers) {
-            List<Integer> arr = numbers.getNumbers();
-            int sum = 0;
-            for (Integer num : arr) {
-                sum += num;
-            }
-            SumResponse response = new SumResponse();
-            response.setSum(sum);
-            return response;
+        List<Integer> arr = numbers.getNumbers();
+        int sum = 0;
+        for (Integer num : arr) {
+            sum += num;
+        }
+        SumResponse response = new SumResponse();
+        response.setSum(sum);
+        return response;
     }
 
     // TODO: Реализовать метод sumif
@@ -200,7 +199,7 @@ public class HomeWork7Controller {
     //    }
 
 
-    @PostMapping("/sumif")
+    @PostMapping("/post_sumif")
 
     public SumifResponse sumif(@RequestBody SumifRequest numbers) {
 
@@ -210,7 +209,7 @@ public class HomeWork7Controller {
 
         for (SumifNumbers num : arr) {
             if(num.getConditions())//
-            sum += num.getNumbers();
+                sum += num.getNumbers();
         }
 
         SumifResponse response = new SumifResponse();
