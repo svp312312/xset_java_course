@@ -23,16 +23,16 @@ import java.util.logging.*;
 @RestController
 
 public class LoggerService {
-    Logger logger = Logger.getLogger(LoggerService.class.getName());
+    Logger logger1 = Logger.getLogger(LoggerService.class.getName());
 
     public void writeLog(String infoMessage, String sendObject) throws IOException {
         FileHandler fileHandler = new FileHandler("app.log", true);
-        logger.setLevel(Level.INFO);
+        logger1.setLevel(Level.INFO);
 
         fileHandler.setFormatter(new SimpleFormatter());
-        logger.addHandler(fileHandler);
+        logger1.addHandler(fileHandler);
         String message = LocalDateTime.now() + ": " + infoMessage + ": " + sendObject;
-        logger.info(message);
+        logger1.info(message);
         fileHandler.close();
 
     }
