@@ -1,0 +1,28 @@
+2025-11-26 15:47:35: DROP TABLE IF EXISTS users CASCADE: 200 OK
+2025-11-26 15:47:35: DROP TABLE IF EXISTS departments CASCADE: 200 OK
+2025-11-26 15:47:35: CREATE TABLE departments: 200 OK
+2025-11-26 15:47:35: CREATE TABLE users : 200 OK
+2025-11-26 15:47:35: INSERT INTO departments: 200 OK
+2025-11-26 15:47:35: INSERT INTO users: 200 OK
+2025-11-26 15:48:28: DROP TABLE IF EXISTS users CASCADE: 200 OK
+2025-11-26 15:48:28: DROP TABLE IF EXISTS departments CASCADE: 200 OK
+2025-11-26 15:48:28: CREATE TABLE departments: 200 OK
+2025-11-26 15:48:28: CREATE TABLE users : 200 OK
+2025-11-26 15:48:28: INSERT INTO departments: 200 OK
+2025-11-26 15:48:28: INSERT INTO users: 200 OK
+2025-11-26 15:49:17: finalProject: {"urlRequest":"/deleteUserByLastName", "message":"Мишкина"}
+2025-11-26 15:49:45: User(id=0, firstName=Инна, lastName=Курицына, birthDate=2007-08-08, departId=2): 
+2025-11-26 15:49:45: finalProject: {"urlRequest":"/createUser", "message":"User(id=0, firstName=Инна, lastName=Курицына, birthDate=2007-08-08, departId=2)"}
+2025-11-26 15:50:01: finalProject: {"urlRequest":"/updateUser", "message":"id=5, lastName=Кукушко, departId=2"}
+2025-11-26 15:50:32: finalProject: {"urlRequest":"/getAllUsers", "message":""}
+2025-11-26 15:50:38: finalProject: {"urlRequest":"/getDepartments", "message":""}
+2025-11-26 15:50:43: finalProject: {"urlRequest":"/getUserByBirthDate", "message":"2000-01-01"}
+2025-11-26 15:50:47: finalProject: {"urlRequest":"/getAmountUsersByDepartmentAndMore5", "message":""}
+2025-11-26 15:51:29: finalProject: {"urlRequest":"/deleteUserByLastName", "message":"Мишкина"}
+2025-11-26 15:51:46: finalProject: {"urlRequest":"/deleteUsers", "message":""}
+2025-11-26 15:52:15: DROP TABLE IF EXISTS users CASCADE: 200 OK
+2025-11-26 15:52:15: DROP TABLE IF EXISTS departments CASCADE: 200 OK
+2025-11-26 15:52:15: CREATE TABLE departments: 200 OK
+2025-11-26 15:52:15: CREATE TABLE users : 200 OK
+2025-11-26 15:52:15: INSERT INTO departments: 200 OK
+2025-11-26 15:52:15: INSERT INTO users: 200 OK

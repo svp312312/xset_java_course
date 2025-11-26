@@ -1,0 +1,22 @@
+2025-11-26 15:49:18: /deleteUserByLastName: {Мишкина}
+2025-11-26 15:49:18: DELETE FROM users WHERE last_name = Мишкина: 
+2025-11-26 15:49:18: /deleteUserByLastName: 200 Ok
+2025-11-26 15:49:45: /createUser: {User(id=0, firstName=Инна, lastName=Курицына, birthDate=2007-08-08, departId=2)}
+2025-11-26 15:49:45: /createUser: 200 Ok
+2025-11-26 15:50:01: /updateUser: {id=5, lastName=Кукушко, departId=2}
+2025-11-26 15:50:01: id=5, lastName=Кукушко, departId=2: Это msg
+2025-11-26 15:50:01: Кукушко 2 5: Update user
+2025-11-26 15:50:01: /updateUser: 200 Ok
+2025-11-26 15:50:32: /getAllUsers: {}
+2025-11-26 15:50:32: /getAllUsers: [User(id=1, firstName=Оксана, lastName=Мушкина, birthDate=2005-01-10, departId=1), User(id=2, firstName=Герман, lastName=Пушистиков, birthDate=2004-02-12, departId=1), User(id=3, firstName=Дана, lastName=Кошакова, birthDate=1999-11-17, departId=1), User(id=4, firstName=Дарья, lastName=Фокс, birthDate=2000-10-09, departId=1), User(id=6, firstName=Карина, lastName=Ежикова, birthDate=1992-05-15, departId=1), User(id=7, firstName=Ангелина, lastName=Пыжикова, birthDate=1998-12-11, departId=1), User(id=8, firstName=Вениамин, lastName=Тушканчик, birthDate=1999-11-17, departId=2), User(id=9, firstName=Дмитрий, lastName=Ондатров, birthDate=2004-02-12, departId=2), User(id=11, firstName=Борислав, lastName=Топорков, birthDate=2000-01-01, departId=2), User(id=12, firstName=Марк, lastName=Петухов, birthDate=1963-07-27, departId=2), User(id=13, firstName=Зинатулла, lastName=Асланов, birthDate=1992-05-15, departId=2), User(id=14, firstName=Василиса, lastName=Цыплакович, birthDate=1998-12-11, departId=3), User(id=15, firstName=Эдуард, lastName=Попугаев, birthDate=2004-02-12, departId=3), User(id=16, firstName=Глафира, lastName=Коргина, birthDate=1999-11-17, departId=3), User(id=17, firstName=Вероника, lastName=Паукова, birthDate=2000-01-01, departId=3), User(id=18, firstName=Таисия, lastName=Чижикова, birthDate=1963-07-27, departId=2), User(id=19, firstName=Карл, lastName=Сурикатов, birthDate=1992-05-15, departId=2), User(id=20, firstName=Артур, lastName=Львовский, birthDate=1998-12-11, departId=1), User(id=21, firstName=Инна, lastName=Курицына, birthDate=2007-08-08, departId=2), User(id=5, firstName=Марианна, lastName=Кукушко, birthDate=1963-07-27, departId=2)]
+2025-11-26 15:50:38: /getDepartments: {}
+2025-11-26 15:50:39: /getDepartments: [Department(id=1, departName=Бухгалтерия), Department(id=2, departName=Закупки), Department(id=3, departName=Продажи)]
+2025-11-26 15:50:43: /getUserByBirthDate: {2000-01-01}
+2025-11-26 15:50:43: /getUserByBirthDate: [User(id=11, firstName=Борислав, lastName=Топорков, birthDate=2000-01-01, departId=2), User(id=17, firstName=Вероника, lastName=Паукова, birthDate=2000-01-01, departId=3)]
+2025-11-26 15:50:47: /getAmountUsersByDepartmentAndMore5: {}
+2025-11-26 15:50:47: /getAmountUsersByDepartmentAndMore5: [Count(departName=Закупки, count=9), Count(departName=Бухгалтерия, count=7)]
+2025-11-26 15:51:29: /deleteUserByLastName: {Мишкина}
+2025-11-26 15:51:29: DELETE FROM users WHERE last_name = Мишкина: 
+2025-11-26 15:51:29: /deleteUserByLastName: failure
+2025-11-26 15:51:46: /deleteUsers: {}
+2025-11-26 15:51:46: /deleteUsers: 200 Ok
