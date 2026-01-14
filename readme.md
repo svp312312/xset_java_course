@@ -9,6 +9,7 @@
   
 ✅ [homework2](https://github.com/svp312312/xset_java_course/tree/master/src/main/java/school/xset/homework2)
 
-  Созданан класса с аннотацией @RestController для обработки HTTP запросов. Созданы методы
+  Создан класса с аннотацией @RestController для обработки HTTP запросов. Созданы методы:
+  ```- получить текущее время
 - Элемент 3
 - 
