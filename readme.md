@@ -5,7 +5,7 @@
 
 ✅ [homework1](https://github.com/svp312312/xset_java_course/tree/master/src/main/java/school/xset/homework1)
 
-  Задача про двух программистов. Создан класс, конструктор, методы, произведена проверка отработки методов в main.
+  Задача про двух программистов. Создан класс, конструктор, методы; проведена проверка отработки методов в main.
   
 ✅ [homework2](https://github.com/svp312312/xset_java_course/tree/master/src/main/java/school/xset/homework2)
 
