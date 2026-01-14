@@ -70,4 +70,6 @@
 - Вычислить сумму всех элементов массива
 - Вычислить сумму с учетом условия
 
+✅ [homework8](https://github.com/svp312312/xset_java_course/tree/master/src/main/java/school/xset/homework8)
+
 
