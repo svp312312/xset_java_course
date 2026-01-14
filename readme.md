@@ -6,7 +6,9 @@
 ✅ [homework1](https://github.com/svp312312/xset_java_course/tree/master/src/main/java/school/xset/homework1)
 
   Задача про двух программистов. Создан класс, конструктор, методы, произведена проверка отработки методов в main.
+  
 ✅ [homework2](https://github.com/svp312312/xset_java_course/tree/master/src/main/java/school/xset/homework2)
-  Создание класса с аннотацией @RestController для обработки HTTP запросов. Созданы методы
+
+  Созданан класса с аннотацией @RestController для обработки HTTP запросов. Созданы методы
 - Элемент 3
 - 
