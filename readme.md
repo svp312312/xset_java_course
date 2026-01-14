@@ -9,12 +9,13 @@
   
 ✅ [homework2](https://github.com/svp312312/xset_java_course/tree/master/src/main/java/school/xset/homework2)
 
-  Задача на применение RestController для GET Запросов. Создан класс с аннотацией @RestController для обработки HTTP запросов.
+  Задача на контроллер для GET-запросов. Создан класс с аннотацией @RestController для обработки HTTP запросов.
   
   Созданы методы:
   - для получения текущего времени (с использованием LocalDateTime.now());
   - для получения текущего месяца и определения сезона (с оператором switch - case);
-  - для генерации случайной даты в будущем:
+  - для генерации случайной даты в будущем (с методом random.nextInt()).
+✅ [homework3](https://github.com/svp312312/xset_java_course/tree/master/src/main/java/school/xset/homework3)
   -  
 - Элемент 3
 - 
