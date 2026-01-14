@@ -1,4 +1,4 @@
-## Репозиторий xset_java_course
+## Содержимое репозитория xset_java_course
 В директории [src/main/java/school/xset/](https://github.com/svp312312/xset_java_course/tree/master/src/main/java/school/xset) находятся выполненные задания из курса **"Java для тестировщиков"** (школа компании ООО "Иксет", ноябрь-декабрь 2025 г.) 
 
 ### Перечень решённых задач
