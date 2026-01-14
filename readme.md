@@ -3,6 +3,7 @@
 
 ### Cписок задач
 
-- Элемент 1
+- [homework1](https://github.com/svp312312/xset_java_course/tree/master/src/main/java/school/xset/homework1)
+  
 - Элемент 2
 - Элемент 3
