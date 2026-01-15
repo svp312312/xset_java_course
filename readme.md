@@ -90,7 +90,7 @@
      <td>№</td><td>Метод</td><td>Запрос</td><td>Назначение</td>
   </th>
   <tr>
-    <td>1.</td><td>POST</td><td>/createUser</td><td>Создание пользователя</td>
+    <td>1.</td><td>POST</td><td>\/createUser</td><td>Создание пользователя</td>
   </tr>
 </table>
 
