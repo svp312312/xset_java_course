@@ -90,7 +90,22 @@
      <th>№</th><th>Метод</th><th>Запрос</th><th>Назначение</th>
   </tr>
   <tr>
-    <td>1.</td><td>POST</td><td>\/createUser</td><td>Создание пользователя</td>
+    <td>1.</td><td>POST</td><td>/createUser</td><td>Создание пользователя</td>
+  </tr>
+  <tr>
+    <td>2.</td><td>POST</td><td>/updateUser</td><td>Обновление пользователя</td>
+  </tr>
+  <tr>
+    <td>3.</td><td>GET</td><td>/getAllUsers</td><td>Получение всех пользователей</td>
+  </tr>
+  <tr>
+    <td>4.</td><td>GET</td><td>/getUserByBirthDate?birthDate={birthDate}</td><td>получение пользователей по дате рождения</td>
+  </tr>
+  <tr>
+    <td>5.</td><td>DELETE</td><td>/deleteUserByLastName?LastName={LastName}</td><td>Удаление пользователей по фамилии</td>
+  </tr>
+  <tr>
+    <td>6.</td><td>DELETE</td><td>/deleteUsers</td><td>Удаление пользователей (truncate)</td>
   </tr>
 </table>
 
