@@ -73,7 +73,7 @@
 Задача на создание backend для подключения через JDBC к PostgreSQL (БД "Студенты"). 
 
 Реализованы: 
-- подключение к БД;
+- подключение к БД через application.properties;
 - создание таблиц и их наполнение через backend, с предварительной чисткой ранее созданных таблиц;
 - методы для выполнения запросов к БД (выборка данных, обновление, добавление, удаление записи);
 - логирование (каждый запрос к БД записывается в текстовый файл);
@@ -82,7 +82,7 @@
 ✅ [homework12](https://github.com/svp312312/xset_java_course/tree/master/src/main/java/school/xset/homework12)  
 Финальный проект: разработка сервисов Producer и Consumer для взаимодействия с БД через Kafka, в соответствии с [заданием](https://github.com/svp312312/xset_java_course/blob/master/src/main/java/school/xset/homework12/homeworkAssignment.txt). 
 
-<table border="1">
+<table>
   <caption>
     Rest-API сервиса Producer
   </caption> 
@@ -90,22 +90,22 @@
      <th>№</th><th>Метод</th><th>Запрос</th><th>Назначение</th>
   </tr>
   <tr>
-    <td>1.</td><td>POST</td><td>`/createUser`</td><td>Создание пользователя</td>
+    <td>1.</td><td>POST</td><td>/createUser</td><td>Создание пользователя</td>
   </tr>
   <tr>
-    <td>2.</td><td>POST</td><td>`/updateUser`</td><td>Обновление пользователя</td>
+    <td>2.</td><td>POST</td><td>/updateUser</td><td>Обновление пользователя</td>
   </tr>
   <tr>
-    <td>3.</td><td>GET</td><td>`/getAllUsers`</td><td>Получение всех пользователей</td>
+    <td>3.</td><td>GET</td><td>/getAllUsers</td><td>Получение всех пользователей</td>
   </tr>
   <tr>
-    <td>4.</td><td>GET</td><td>`/getUserByBirthDate?birthDate={birthDate}`</td><td>получение пользователей по дате рождения</td>
+    <td>4.</td><td>GET</td><td>/getUserByBirthDate?birthDate={birthDate}</td><td>получение пользователей по дате рождения</td>
   </tr>
   <tr>
-    <td>5.</td><td>DELETE</td><td>`/deleteUserByLastName?LastName={LastName}`</td><td>Удаление пользователей по фамилии</td>
+    <td>5.</td><td>DELETE</td><td>/deleteUserByLastName?LastName={LastName}</td><td>Удаление пользователей по фамилии</td>
   </tr>
   <tr>
-    <td>6.</td><td>DELETE</td><td>`/deleteUsers`</td><td>Удаление пользователей (truncate)</td>
+    <td>6.</td><td>DELETE</td><td>/deleteUsers</td><td>Удаление пользователей (truncate)</td>
   </tr>
 </table>
 
