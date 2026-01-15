@@ -80,7 +80,7 @@
 - запрос с получением логов из файла за определенный промежуток времени.
 
 ✅ [homework12](https://github.com/svp312312/xset_java_course/tree/master/src/main/java/school/xset/homework12)  
-Финальный проект: разработка producer и consumer для взаимодействия с БД через Kafka, в соответствии с [заданием](https://github.com/svp312312/xset_java_course/blob/master/src/main/java/school/xset/homework12/homeworkAssignment.txt) 
+Финальный проект: разработка producer и consumer для взаимодействия с БД через Kafka, в соответствии с [заданием](https://github.com/svp312312/xset_java_course/blob/master/src/main/java/school/xset/homework12/homeworkAssignment.txt). 
 
 
 
