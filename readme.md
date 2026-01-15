@@ -23,9 +23,8 @@
   - конкретные реализации интерфейса коробки (внутри коробка содержит ArrayList сладостей и работает с ним, вне коробки ArrayList недоступен);
   - методы для умной оптимизации подарка: удаление сладостей с меньшим весом и с меньшей ценой, пока вес коробки не станет меньше входного параметра.
 
-✅ [homework4](https://github.com/svp312312/xset_java_course/tree/master/src/main/java/school/xset/homework4)
-
- Ещё одна задача на RestController для GET-запросов. 
+✅ [homework4](https://github.com/svp312312/xset_java_course/tree/master/src/main/java/school/xset/homework4)  
+Ещё одна задача на RestController для GET-запросов. 
   
   Созданы методы:
   - вычисление дня недели по переданной дате (с примером лямбда подобного синтаксиса в switch);
