@@ -3,21 +3,18 @@
 
 ### Перечень решённых задач
 
-✅ [homework1](https://github.com/svp312312/xset_java_course/tree/master/src/main/java/school/xset/homework1)
-
-  Задача про двух программистов. Создан класс, конструктор, методы; проведена проверка отработки методов в main.
+✅ [homework1](https://github.com/svp312312/xset_java_course/tree/master/src/main/java/school/xset/homework1)  
+Задача про двух программистов. Создан класс, конструктор, методы; проведена проверка отработки методов в main.
   
-✅ [homework2](https://github.com/svp312312/xset_java_course/tree/master/src/main/java/school/xset/homework2)
-
-  Задача на контроллер для GET-запросов. Был создан класс с аннотацией @RestController для обработки HTTP запросов.
+✅ [homework2](https://github.com/svp312312/xset_java_course/tree/master/src/main/java/school/xset/homework2)    
+Реализация контроллера для GET-запросов. Был создан класс с аннотацией @RestController для обработки HTTP запросов.
   
   Созданы методы:
-  - для получения текущего времени (с использованием LocalDateTime.now());
-  - для получения текущего месяца и определения сезона (с оператором switch - case);
-  - для генерации случайной даты в будущем (с методом random.nextInt()).
+  - получение текущего времени;
+  - получение текущего месяца и определения сезона;
+  - генерация случайной даты в будущем.
     
-✅ [homework3](https://github.com/svp312312/xset_java_course/tree/master/src/main/java/school/xset/homework3)
-
+✅ [homework3](https://github.com/svp312312/xset_java_course/tree/master/src/main/java/school/xset/homework3)  
 Задача про коробку со сладостями. 
 
 Созданы:
@@ -39,17 +36,15 @@
   - для сортировки массива по возрастанию или убыванию (порядок определяется переданным в запросе логическим значением);
   - для разделения строки по позиции и отправки части строки.
 
-✅ [homework5](https://github.com/svp312312/xset_java_course/tree/master/src/main/java/school/xset/homework5)
-
+✅ [homework5](https://github.com/svp312312/xset_java_course/tree/master/src/main/java/school/xset/homework5)  
 Сравнительный анализ ArrayList и LinkedList. Исходный размер коллекций - 1 млн. элементов. 
 
-Выполнено сравнение времени выполнения операций:
-1. Добавление 500к элементов в середину списка.
-2. Получение элемента из середины списка.
-3. Удаление элемента из середины списка.
+Сранивалось время выполнения операций:
+- добавление 500 тысяч элементов в середину списка;
+- получение элемента из середины списка;
+- удаление элемента из середины списка.
 
-✅ [homework6](https://github.com/svp312312/xset_java_course/tree/master/src/main/java/school/xset/homework6)
-
+✅ [homework6](https://github.com/svp312312/xset_java_course/tree/master/src/main/java/school/xset/homework6)  
 Задача на обработку информации из текстового файла. 
 
 Необходимо было:
@@ -60,7 +55,8 @@
 - Найти самое длинное слово в файле и вывести его на экран (если таких несколько — вывести все).
 
 ✅ [homework7](https://github.com/svp312312/xset_java_course/tree/master/src/main/java/school/xset/homework7)   
-Задача на контроллер для POST-запросов. Данные передаются в теле запроса в формате JSON.  
+Создание контроллера для POST-запросов. Данные передаются в теле запроса в формате JSON.
+
 Необходимо было:
 - Вернуть случайную дату между двумя переданными;
 - Вернуть отсортированный массив (порядок определяется переданным в запросе логическим значением)
@@ -70,9 +66,21 @@
 
 ✅ [homework8](https://github.com/svp312312/xset_java_course/tree/master/src/main/java/school/xset/homework8)  
 Задача на работу с логами.   
-Требовалось для приложения из homework7 реализовать отдельный класс с методами записи логов в текстовый файл и возвращением всех логов из файла по GET-запросу.  
+Требовалось для приложения из homework7 реализовать отдельный класс с методами записи сообщений в текстовый файл и возвращением всех логов из файла по GET-запросу.
 
-✅ [homework8](https://github.com/svp312312/xset_java_course/tree/master/src/main/java/school/xset/homework8)  
+\*\*\* Примечание. В данном репозитории нет выполненных домашних заданий homework9 (тренинг по созданию SQL-запросов) и homework10 (развертывание элементов архитектуры в докер-контейнерах и настройка мониторинга).
+
+✅ [homework11](https://github.com/svp312312/xset_java_course/tree/master/src/main/java/school/xset/homework11)      
+Задача на создание backend для подключения через JDBC к PostgreSQL (БД "Студенты"). 
+
+Реализованы: 
+- подключение к БД
+- создание таблиц и их наполнение через backend, предусмотрена предварительная чистка ранее созданных таблиц
+- реализованы методы для выполнения запросов к БД (выборка данных, обновление, добавление, удаление записи)
+- реализовано логирование (каждый запрос к БД записывается в текстовый файл)
+- реализован запрос с получением логов из файла за определенный промежуток времени
+
+✅ [homework11](https://github.com/svp312312/xset_java_course/tree/master/src/main/java/school/xset/homework11)
 
 
 
