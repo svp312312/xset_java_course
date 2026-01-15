@@ -8,7 +8,7 @@
   
 ✅ [homework2](https://github.com/svp312312/xset_java_course/tree/master/src/main/java/school/xset/homework2)    
 Реализация контроллера для GET-запросов. Был создан класс с аннотацией `@RestController` для обработки HTTP запросов.
-<details><summary>Подробнее...</summary>  
+<details><summary>Подробнее...</summary>    
   
  
  Созданы методы:
