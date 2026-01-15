@@ -1,0 +1,51 @@
+Требуется реализовать CRUD-проекта (согласно архитектуре описанной в презентации)
+* Rest-API сервиса Producer:
+    1. POST /createUser - создание пользователя
+    2. POST /updateUser - обновление пользователя
+    3. GET /getAllUsers - получение всех пользователей
+    4. GET /getUserByBirthDate?birthDate={birthDate} - получение пользователей по дате рождения
+    5. DELETE /deleteUserByLastName?LastName={LastName} - удаление пользователей по Фамилии
+    6. DELETE /deleteUsers - удаление пользователей (truncate)
+    7. GET /log - получение лога от Producer (после перезапуска Producer, лог не должен чиститься)
+    8. GET /getDepartments - получение всех департаментов
+    9. GET /getAmountUsersByDepartmentAndMore5 - получение количество юзеров по каждому департаменту, количество которых больше 5
+
+* Сервис Producer должен отправлять сообщение в сторону кафки (топик - finalProject) cледующего вида:
+    {
+        "urlRequest": "urlRequest",
+        "message": "message"
+    }
+    где urlRequest - передается url входящего запроса
+        message - передается целевая информация (либо аргументы при DELETE/GET запросы, либо тело запроса при POST запросе)
+Producer должен возвращать ответ в виде сообщения об успешной операции (Запись по (операция) успешно добавлена в кафку)
+
+* Сервис Consumer должен читать сообщение из топика finalProject и обрабатывать сообщение:
+    1. В зависимости от urlRequest выполнить соответствующий запрос по JDBC в БД
+    2. Данные для запроса необходимо брать из message
+
+* Каждая операция должна быть залогирована в формате: DataTime: /urlRequest: {message}
+
+* На стороне БД требуется создать следующие таблицы:
+Users (id Serial, FirstName text, LastName text, birthDay date, DepartmentId int)
+Department (id Serial, NameDepartment text)
+
+Для таблицы Users должны быть выполнены след условия
+1. FirstName, LastName - не должны быть null
+2. Комбинация FirstName + LastName должна быть уникальной
+3. DepartmentId - внешний ключ на таблицу Department
+
+Для таблицы Department:
+1. NameDepartment не должен быть null
+
+Для обоих таблиц id - первичный ключ
+
+Для каждого компонента необходимо навесить мониторинг:
+PostgreSQL
+Node exporter
+Kafka exporter
+Опционально JVM метрики (Micrometer)
+
+Также необходимо реализовать проверки со стороны Producer, чтобы обеспечить валидность передаваемых
+параметров через кафку в Consumer и не допустить ошибок при выполнении запросов в БД
+
+Прислать git репозиторий с реализованными Producer/Consumer
