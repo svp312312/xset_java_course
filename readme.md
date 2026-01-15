@@ -8,12 +8,12 @@
   
 ✅ [homework2](https://github.com/svp312312/xset_java_course/tree/master/src/main/java/school/xset/homework2)    
 Реализация контроллера для GET-запросов. Был создан класс с аннотацией `@RestController` для обработки HTTP запросов.
-  
+<details><summary>Больше...</summary>  
   Созданы методы:
   - получение текущего времени;
   - получение текущего месяца и определения сезона;
   - генерация случайной даты в будущем.
-    
+</details>   
 ✅ [homework3](https://github.com/svp312312/xset_java_course/tree/master/src/main/java/school/xset/homework3)  
 Задача про коробку со сладостями. 
 
