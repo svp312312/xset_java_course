@@ -4,7 +4,7 @@
 ### Решённые задачи
 
 ✅ [homework1](https://github.com/svp312312/xset_java_course/tree/master/src/main/java/school/xset/homework1)  
-Задача про двух программистов. Создан класс, конструктор, методы; проведена проверка отработки методов в main.
+Задача про двух программистов. Реализованы класс, конструктор, методы, проверка отработки методов в main.
   
 ✅ [homework2](https://github.com/svp312312/xset_java_course/tree/master/src/main/java/school/xset/homework2)    
 Реализация контроллера для GET-запросов. Был создан класс с аннотацией @RestController для обработки HTTP запросов.
