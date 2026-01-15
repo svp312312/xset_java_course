@@ -1,5 +1,5 @@
 ## Содержимое репозитория xset_java_course
-В директории [src/main/java/school/xset/](https://github.com/svp312312/xset_java_course/tree/master/src/main/java/school/xset) находятся выполненные задания из курса **"Java для тестировщиков"** (школа компании ООО "Иксет", ноябрь-декабрь 2025 г.) 
+В директории [src/main/java/school/xset/](https://github.com/svp312312/xset_java_course/tree/master/src/main/java/school/xset) находятся выполненные задания из курса **"Java для тестировщиков"** (школа "XSET Technologies ", ноябрь-декабрь 2025 г.) 
 
 ### Перечень решённых задач
 
@@ -80,7 +80,8 @@
 - реализовано логирование (каждый запрос к БД записывается в текстовый файл)
 - реализован запрос с получением логов из файла за определенный промежуток времени
 
-✅ [homework11](https://github.com/svp312312/xset_java_course/tree/master/src/main/java/school/xset/homework11)
+✅ [homework11](https://github.com/svp312312/xset_java_course/tree/master/src/main/java/school/xset/homework11)  
+Финальный проект: разработка продюсера и консьюмера для взаимодействия с БД через Kafka, согласно [заданию](https://github.com/svp312312/xset_java_course/blob/master/src/main/java/school/xset/homework12/homeworkAssignment.txt) 
 
 
 
