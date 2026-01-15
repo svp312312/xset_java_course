@@ -86,9 +86,9 @@
   <caption>
     Rest-API сервиса Producer
   </caption> 
-  <th>
-     <td>№</td><td>Метод</td><td>Запрос</td><td>Назначение</td>
-  </th>
+  <tr>
+     <th>№</th><th>Метод</th><th>Запрос</th><th>Назначение</th>
+  </tr>
   <tr>
     <td>1.</td><td>POST</td><td>\/createUser</td><td>Создание пользователя</td>
   </tr>
