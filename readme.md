@@ -59,10 +59,8 @@
 - Подсчитать, сколько раз встречается каждое слово, и вывести статистику
 - Найти самое длинное слово в файле и вывести его на экран (если таких несколько — вывести все).
 
-✅ [homework7](https://github.com/svp312312/xset_java_course/tree/master/src/main/java/school/xset/homework7)
- 
-Задача на контроллер для POST-запросов. Данные передаются в теле запроса в формате JSON.
-
+✅ [homework7](https://github.com/svp312312/xset_java_course/tree/master/src/main/java/school/xset/homework7)   
+Задача на контроллер для POST-запросов. Данные передаются в теле запроса в формате JSON.  
 Необходимо было:
 - Вернуть случайную дату между двумя переданными;
 - Вернуть отсортированный массив (порядок определяется переданным в запросе логическим значением)
@@ -70,6 +68,15 @@
 - Вычислить сумму всех элементов массива
 - Вычислить сумму с учетом условия
 
-✅ [homework8](https://github.com/svp312312/xset_java_course/tree/master/src/main/java/school/xset/homework8)
+✅ [homework8](https://github.com/svp312312/xset_java_course/tree/master/src/main/java/school/xset/homework8)  
+Задача на работу с логами.   
+Требовалось для приложения из homework7 реализовать отдельный класс с методами записи логов в текстовый файл и возвращением всех логов из файла по GET-запросу.  
+
+✅ [homework8](https://github.com/svp312312/xset_java_course/tree/master/src/main/java/school/xset/homework8)  
+
+
+
+
+
 
 
