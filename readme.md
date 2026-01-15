@@ -81,7 +81,7 @@
 - реализован запрос с получением логов из файла за определенный промежуток времени
 
 ✅ [homework11](https://github.com/svp312312/xset_java_course/tree/master/src/main/java/school/xset/homework11)  
-Финальный проект: разработка продюсера и консьюмера для взаимодействия с БД через Kafka, согласно [заданию](https://github.com/svp312312/xset_java_course/blob/master/src/main/java/school/xset/homework12/homeworkAssignment.txt) 
+Финальный проект: разработка producer и consumer для взаимодействия с БД через Kafka, в соответствии с [заданием](https://github.com/svp312312/xset_java_course/blob/master/src/main/java/school/xset/homework12/homeworkAssignment.txt) 
 
 
 
