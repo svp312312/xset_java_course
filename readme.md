@@ -1,5 +1,5 @@
 ## Содержимое репозитория xset_java_course
-В директории [src/main/java/school/xset/](https://github.com/svp312312/xset_java_course/tree/master/src/main/java/school/xset) находятся выполненные задания из курса **"Java для тестировщиков с нуля"** (школа "XSET Technologies", ноябрь-декабрь 2025 г.) 
+В директории [src/main/java/school/xset/](https://github.com/svp312312/xset_java_course/tree/master/src/main/java/school/xset) находятся выполненные задания из курса **"Java для тестировщиков с нуля"** ([школа "XSET Technologies"](https://xset.skillspace.ru/school/courses), ноябрь-декабрь 2025 г.) 
 
 ### Решённые задачи
 
